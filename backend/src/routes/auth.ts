@@ -22,7 +22,6 @@ router.post(
     if (!errors.isEmpty()) {
       res.status(400).json({ message: errors.array() });
       return;
-      return;
     }
 
     const { email, password } = req.body;
